@@ -1,9 +1,9 @@
 
-  # ReadMe Generator
+  # Professional README Generator
   ![License](https://img.shields.io/badge/License-GNU_AGPLv3-blue.svg)
 
   ## Description 
-  Generates a ReadMe.md file from the command line using node.js
+  As a developer, I want a README generator so that I can quickly create a professional README for a new project. This project allows the user to use node.js and generate a README.md file using the command-line that accepts the user input.
 
   ## Table of Contents 
   * [Installation](#installation)
@@ -16,10 +16,10 @@
   * [Questions](#Questions)
   
   ## Installation 
-  First, download the files. Second, init nmp to retrieve node_module files. Lastly, type node index and answer questions.
+  First, clone the project files. Second, run npm init to instal any dependencies needed. Lastly, run node index and enter your info into prompts.
 
   ## Usage
-  Download the files
+  When prompted for information about my application, the information inputed will then generate a high-quality readme.md that will be structured using Markup.
 
   
   ## Liscense
@@ -29,12 +29,13 @@
   
 
   ## Contributing
-  Other developers are welcome to contribute anyway they want
+  Developers can contribute as needed.
 
   ## Test
-  Have to run program from command line.
+  No testing file. Just run the project using the instructions. 
+  ![Test Image Reference](./Develope/image/handsTyping.jpg)
 
   ## Questions
   My Github username is RyleeThomas , if you would like to visit my GitHub page the link is: www.github.com/RyleeThomas
-  For further quesitons please reach out via email: ryleetreat@gmail.com
+  For further quesitons please reach out via email: Ryleetreat@gmail.com
 

@@ -70,6 +70,7 @@ function generateMarkdown(data) {
 
   ## Test
   ${data.test}
+  ${addImageTest(data.testImage)}
 
   ## Questions
   My Github username is ${data.userName} , if you would like to visit my GitHub page the link is: ${data.githubLink}
