@@ -1,8 +1,6 @@
 
   # hi
-  
-    ![License](https://img.shields.io/badge/License-GNU_LGPLv3-blue)
-  
+  ![License](https://img.shields.io/badge/License-GNU_GPLv3-blue.svg)
 
   ## Description 
   hi
@@ -25,7 +23,7 @@
 
   
   ## Liscense
-  This application is covered under the GNU_LGPLv3.
+  This application is covered under the GNU_GPLv3.
   For more information regarding the license permissions, conditions, and limitations please
   visit [chooselicense.com](https://choosealicense.com/licenses/)
   
