@@ -1,19 +1,44 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
-
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+const generateLiscenseBadge = license => {
+  if(!license){
+    return '';
+  }
+
+  return `
+    [![Liscense](https://img.shields.io/badge/Liscense-${license}-blue)]
+  `;
+}
+// add license to table of contents
+const addLicenseToTable = license => {
+  if(!license){
+    return '';
+  }
+
+  return `
+    *[License](#License)
+  `;
+}
+
+const addLicenseDescription = license => {
+  if(!license){
+    return '';
+  }
+
+  return `
+  ## Liscense
+  This application is covered under the ${license}.
+  For more information regarding the license permissions, conditions, and limitations please
+  visit (https://choosealicense.com/licenses/)
+  `;
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.title}
+  ${generateLiscenseBadge(data.license)}
 
   ## Description 
   ${data.description}
@@ -21,6 +46,7 @@ function generateMarkdown(data) {
   ## Table of Contents 
   * [Installation](#installation)
   * [Usage](#Usage)
+  ${addLicenseToTable(data.license)}
   * [Contributing](#Contributing)
   * [Test](#Test)
   * [Questions](#Questions)
@@ -30,6 +56,8 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
+
+  ${addLicenseDescription(data.license)}
 
   ## Contributing
   ${data.contributing}
