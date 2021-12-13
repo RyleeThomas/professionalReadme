@@ -7,7 +7,7 @@ const generateLiscenseBadge = license => {
   }
 
   return `
-    ![Liscense](https://img.shields.io/badge/Liscense-${license}-blue)
+    ![License](https://img.shields.io/badge/License-${license}-blue)
   `;
 }
 // add license to table of contents

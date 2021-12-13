@@ -64,8 +64,8 @@ const promptUser = readmeData => {
         type: 'checkbox',
         name: 'license',
         message: 'What liscense badge did you want for this project?',
-        choices: ['GNU AGPLv3','GNU GPLv3','GNU LGPLv3','Mozilla Publis Liscense 2.0',
-    'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense']
+        choices: ['GNU_AGPLv3','GNU_GPLv3','GNU_LGPLv3','Mozilla_Publis_Liscense_2.0',
+    'Apache_License_2.0', 'MIT_License', 'Boost_Software_License_1.0', 'The_Unlicense']
     },
 
     {
