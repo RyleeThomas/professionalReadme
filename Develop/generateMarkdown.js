@@ -31,6 +31,14 @@ const addLicenseDescription = license => {
   visit [chooselicense.com](https://choosealicense.com/licenses/)
   `;
 }
+// adding a images/video to the testing area
+const addImageTest = testImage => {
+  if(!testImage){
+    return '';
+  }
+
+  return `![Test Image Reference](${testImage})`
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {

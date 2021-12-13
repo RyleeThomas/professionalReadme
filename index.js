@@ -39,25 +39,77 @@ const promptUser = readmeData => {
     {
         type: 'input',
         name: 'usage',
-        message: 'Provide instructions for use'
+        message: 'Provide instructions for use (Required)',
+        validate: nameInput => {
+            if (nameInput) {
+              return true;
+            } else {
+              console.log('Please enter instructions for use!');
+              return false;
+            }
+        }
     },
     
     {
         type: 'input',
         name: 'installation',
-        message: 'Enter the steps required to install your project'
+        message: 'Enter the steps required to install your project (Required)',
+        validate: nameInput => {
+            if (nameInput) {
+              return true;
+            } else {
+              console.log('Please the steps required to install your project!');
+              return false;
+            }
+        }
     },
 
     {
         type: 'input',
         name: 'contributing',
-        message: 'Add guidelines for how other developers can contribute to it'
+        message: 'Add guidelines for how other developers can contribute to it (Required)',
+        validate: nameInput => {
+            if (nameInput) {
+              return true;
+            } else {
+              console.log('Please enter guidelines for how other developers can contribute to it!');
+              return false;
+            }
+        }
     },
 
     {
         type: 'input',
         name: 'test',
-        message: 'Provide examples on how to run test for your application'
+        message: 'Provide examples on how to run test for your application (Required)',
+        validate: nameInput => {
+            if (nameInput) {
+              return true;
+            } else {
+              console.log('Please enter examples on how to run test!');
+              return false;
+            }
+        }
+    },
+
+    {
+        type: 'confirm',
+        name: 'confirmTestImage',
+        message: 'Would you like to add an image reference?',
+        default: true
+    },
+
+    {
+        type: 'input',
+        name: 'testImage',
+        message: 'Provide path to image in folder: ',
+        when: ({ confirmTestImage }) => {
+            if (confirmTestImage) {
+              return true;
+            } else {
+              return false;
+            }
+        }
     },
 
     {
@@ -71,19 +123,43 @@ const promptUser = readmeData => {
     {
         type: 'input',
         name: 'userName',
-        message: 'Enter your Github username'
+        message: 'Enter your Github username (Required)',
+        validate: nameInput => {
+            if (nameInput) {
+              return true;
+            } else {
+              console.log('Please enter your Github username!');
+              return false;
+            }
+        }
     },
 
     {
         type: 'input',
         name: 'githubLink',
-        message: 'Enter the link to your GitHub'
+        message: 'Enter the link to your GitHub (Required)',
+        validate: nameInput => {
+            if (nameInput) {
+              return true;
+            } else {
+              console.log('Please enter the link to your GitHub!');
+              return false;
+            }
+        }
     },
 
     {
         type: 'input',
         name: 'email',
-        message: 'Enter an Email for contact'
+        message: 'Enter an Email for contact (Required)',
+        validate: nameInput => {
+            if (nameInput) {
+              return true;
+            } else {
+              console.log('Please enter an Email for contact!');
+              return false;
+            }
+        }
     },
 
   ]);
