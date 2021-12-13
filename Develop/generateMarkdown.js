@@ -7,7 +7,7 @@ const generateLiscenseBadge = license => {
   }
 
   return `
-    [![Liscense](https://img.shields.io/badge/Liscense-${license}-blue)]
+    ![Liscense](https://img.shields.io/badge/Liscense-${license}-blue)
   `;
 }
 // add license to table of contents
@@ -17,7 +17,7 @@ const addLicenseToTable = license => {
   }
 
   return `
-    *[License](#License)
+   * [License](#License)
   `;
 }
 
@@ -30,7 +30,7 @@ const addLicenseDescription = license => {
   ## Liscense
   This application is covered under the ${license}.
   For more information regarding the license permissions, conditions, and limitations please
-  visit (https://choosealicense.com/licenses/)
+  visit [chooselicense.com](https://choosealicense.com/licenses/)
   `;
 }
 
