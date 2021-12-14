@@ -33,7 +33,7 @@
 
   ## Test
   No testing file. Just run the project using the instructions. 
-  ![Test Image Reference](./Develope/image/handsTyping.jpg)
+  ![Test Image Reference](./Develop/image/handsTyping.jpg)
 
   ## Questions
   My Github username is RyleeThomas , if you would like to visit my GitHub page the link is: www.github.com/RyleeThomas
