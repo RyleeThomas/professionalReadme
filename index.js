@@ -81,7 +81,7 @@ const promptUser = readmeData => {
     {
         type: 'input',
         name: 'test',
-        message: 'Provide examples on how to run test for your application (Required)',
+        message: 'Provide description on how to run test for your application (Required)',
         validate: nameInput => {
             if (nameInput) {
               return true;
@@ -102,7 +102,7 @@ const promptUser = readmeData => {
     {
         type: 'input',
         name: 'testImage',
-        message: 'Provide path to image in folder: ',
+        message: 'Provide which image you would like to add (ex. file.jpg):',
         when: ({ confirmTestImage }) => {
             if (confirmTestImage) {
               return true;

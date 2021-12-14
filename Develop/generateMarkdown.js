@@ -37,7 +37,7 @@ const addImageTest = testImage => {
     return '';
   }
 
-  return `![Test Image Reference](${testImage})`
+  return `![Test Image Reference](.Develop/image/${testImage})`
 }
 
 // TODO: Create a function to generate markdown for README
